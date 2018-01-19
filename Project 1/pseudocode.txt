@@ -1,0 +1,50 @@
+class menu(switch statement)
+	1. play/start
+	2. quit
+
+class board(create board)
+	default;
+		prompt user for # of rows & cols & num of steps
+			data validation
+
+	call to play/start
+		create new dynamic array for board
+			createBoard();
+		call ant class
+		delete array
+		
+	# of steps
+		prompt user for # of steps
+			data validation
+		suggest # 
+
+	print board langstons ant
+		display board (array)
+		loop through boards, clear screen/step(?)
+		for loop until counter == # of steps
+		
+class inputValidation
+	input as string? and convert to int.
+	if not, return message, not valid
+
+class ant(pointer to board array)
+	Ant class 'a';
+	enum for N, S, E, W;
+	variables for white/black spaces
+	x, y coordinates member variables
+	prompt user enter starting location
+		xCoord and yCoord
+			data validation
+	find coordinate from array location, write @
+		default facing N.
+		switch statement for N, S, E, W
+			write data into array, white square
+				turn right 90 degrees, change to black (#) move 
+			write data into array, black square
+				turn left 90 degrees, change to white (empty space) move
+			for each direction
+	wrap ant around board -> opposite side if collision
+
+int main()
+	estabilish variables, welcome user
+	call menu class
